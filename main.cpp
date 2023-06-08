@@ -7,9 +7,10 @@ int main()
     int operation;
     char choice;
 
+    clearScreen();
+
     do
     {
-        clearScreen(); // Clear the screen before each calculation
 
         std::cout << "This is a simple calculator!" << std::endl
                   << std::endl;
@@ -48,7 +49,9 @@ int main()
         }
         else
         {
-            std::cout << "Exception: Unavailable option!" << std::endl;
+            clearScreen();
+            std::cout << "Exception: Unavailable option!" << std::endl
+                      << std::endl;
             continue; // Jump back to the beginning of the loop and restart
         }
 
