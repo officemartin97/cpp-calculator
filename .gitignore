@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+
+# json Settings
+*.json
+
+# Binaries
+*.o
+main
+
